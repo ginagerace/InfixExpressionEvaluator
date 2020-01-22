@@ -1,0 +1,11 @@
+proj5: ggerac3Storage.o ggerac3Proj5.o
+	g++ -o proj5 ggerac3Storage.o ggerac3Proj5.o 
+
+ggerac3Storage.o: ggerac3Storage.cpp
+	g++ -c ggerac3Storage.cpp
+
+ggerac3proj5.o: ggerac3Proj5.cpp
+	g++ -c ggerac3Proj5.cpp
+
+clean:
+	rm ggerac3Storage.o ggerac3Proj5.o proj5
